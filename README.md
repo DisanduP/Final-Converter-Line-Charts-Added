@@ -332,7 +332,24 @@ node barchart-converter.js -i barchart.mmd -o barchart.drawio
 
 **Output:** Vertical bar chart with axes, value labels, and category labels.
 
-### 8. Sequence Diagram Example
+### 8. Line Chart Example
+**Input** (`linechart.mmd`):
+```mermaid
+xychart-beta
+    title "Monthly Website Traffic"
+    x-axis [Jan, Feb, Mar, Apr, May, Jun]
+    y-axis "Visitors (K)" 0 --> 50
+    line [15, 22, 28, 35, 42, 48]
+```
+
+**Command:**
+```bash
+node linechart-converter.js linechart.mmd linechart.drawio
+```
+
+**Output:** Line chart with connecting data points, axes, grid lines, and value labels showing trends over time.
+
+### 9. Sequence Diagram Example
 **Input** (`sequence.mmd`):
 ```mermaid
 sequenceDiagram
@@ -357,7 +374,7 @@ node sequence-converter.js sequence.mmd sequence.drawio
 
 **Output:** Timeline-based interaction diagram with lifelines and message arrows.
 
-### 9. Mindmap Example
+### 10. Mindmap Example
 **Input** (`mindmap.mmd`):
 ```mermaid
 mindmap
@@ -380,7 +397,7 @@ node mindmap-converter.js mindmap.mmd mindmap.drawio
 
 **Output:** Radial mindmap with root node and expanding branches.
 
-### 10. SWOT Analysis Example
+### 11. SWOT Analysis Example
 **Input** (`swot-input.txt`):
 ```
 quadrant-1 Strengths
